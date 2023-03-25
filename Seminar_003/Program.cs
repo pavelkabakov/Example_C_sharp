@@ -8,6 +8,10 @@
 // Вводим число
 Console.Write("Введите число дня недели - ");
 string input1 = Console.ReadLine();
+//if (input1 < "1" | input1 > "7")
+//{
+//    Console.WriteLine("Сегодня Понедельник");
+//}
 
 if ((input1) == "1")
 {
