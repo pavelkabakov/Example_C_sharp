@@ -1,14 +1,8 @@
-﻿int a1 = 15;
-int b1 = 21;
-int c1 = 88888;
-int a2 = 12;
-int b2 = 2311;
-int c2 = 33;
-int a3 = 12;
-int b3 = 23555;
-int c3 = 221;
+﻿/*
+Дан массив, найти максимальное число
+*/
 
-//int Max(int);
+int[] array = {11, 21, 31, 41, 15, 61, 17, 18, 19 };
 
 int Max(int arg1, int arg2, int arg3)
 {
