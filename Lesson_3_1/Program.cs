@@ -33,6 +33,6 @@ int Method4(int a) // Описание метода который приним�
 {
     return a*a;
 }
-int number = 4;
-int pow2 = Method4(4);
+int number = 6;
+int pow2 = Method4(number);
 Console.WriteLine($"Метод 4 выводит квадрат числа {number} = {pow2}"); // вызов метода
