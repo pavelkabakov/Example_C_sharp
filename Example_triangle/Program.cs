@@ -1,4 +1,8 @@
-﻿Console.Clear();
+﻿//
+//
+//
+
+Console.Clear();
 
 int xa = 40, ya = 1;
 int xb = 1, yb = 30;
