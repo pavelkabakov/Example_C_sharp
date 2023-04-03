@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите x:");
+﻿// принимаем на ввод X и Y - выдаем четверть в системе координат
+
+Console.WriteLine("Введите x:");
 int x = int.Parse(Console.Readline());
 Console.WriteLine("Введите y:");
 int y = int.Parse(Console.Readline());
