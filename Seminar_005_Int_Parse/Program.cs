@@ -10,3 +10,5 @@ int number1 = int.Parse(input1);
 int ostatok = (number1 - number1 / 10*10);
 Console.Write("Последняя цифра числа - ");
 Console.Write(ostatok);
+
+

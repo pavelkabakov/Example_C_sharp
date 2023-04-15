@@ -8,7 +8,7 @@
 // 8 4 2 4
 // Сумма элементов главной диагонали: 1+9+2 = 12
 
-int[,] table = new int[3, 4];
+int[,] table = new int[10, 10];
 
 Console.Clear();
 FillArray(table); // заполняем массив
