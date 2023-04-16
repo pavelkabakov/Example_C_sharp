@@ -1,12 +1,13 @@
-﻿using System;
+﻿// Сортировка массива
+
 Console.Clear();
 
-int[] arr = { 1, 5, 4, 6, 7, 8, 66, 73, 2, 4, 4, 88, 687 };
+int[] arr = { 1, 56, 4, 67, 7, 8, 66, 73, 2, 4, 4, 88, 687 };
 
 PrintArray(arr);
 SelectionSort(arr);
 PrintArray(arr);
-
+// вывод массива
 void PrintArray(int[] array)
 {
     int count = array.Length;
@@ -17,7 +18,7 @@ void PrintArray(int[] array)
     }
     Console.WriteLine();
 }
-
+// сортировка одномерного массива
 void SelectionSort(int[] array)
 {
     for (int i = 0; i < array.Length - 1; i++)

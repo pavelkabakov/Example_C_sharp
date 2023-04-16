@@ -18,15 +18,15 @@ Console.WriteLine();
 }
 }
 
-void FillArray(int[,] tab)
+void FillArray(int[,] table)
 {
 table[1, 2] = 5;
 
-for (int row = 0; row < tab.GetLength(0); row++)
+for (int row = 0; row < table.GetLength(0); row++)
 {
-    for (int columns = 0; columns < tab.GetLength(1); columns++)
+    for (int columns = 0; columns < table.GetLength(1); columns++)
     {
-        tab[row, columns] = new Random().Next(1, 10);
+        table[row, columns] = new Random().Next(1, 10);
     }
 Console.WriteLine();
 }
