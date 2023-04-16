@@ -5,30 +5,30 @@ int[,] table = new int[5, 5];
 FillArray(table);
 Console.WriteLine("Исходный массив");
 PrintArray(table);
-int string1 = 0;
-int string2 = 4;
+int rowNumber1 = 3;
+int rowNumber2 = 4;
 Console.WriteLine("Замененный массив");
-StringReplace(string1, string2, table);
+StringReplace(table, rowNumber1, rowNumber2);
 PrintArray(table);
 
 // Замена строки массива
-void StringReplace(int string1Number, int string2Number, int[ , ] table)
+void StringReplace(int[ , ] table, int rowNumber1, int rowNumber2)
 {
 int tmp = 0;
     for (int columns = 0; columns < table.GetLength(1); columns++)
     {
-        tmp = table[string1Number, columns];
-        table[string1Number, columns]=table[string2Number, columns];
-        table[string2Number, columns]= tmp;
+        tmp = table[rowNumber1, columns];
+        table[rowNumber1, columns]=table[rowNumber2, columns];
+        table[rowNumber2, columns]= tmp;
     }
 }
 // вывод массива
-void PrintArray(int[,] tab) 
+void PrintArray(int[,] table) 
 {
-for (int rows = 0; rows < tab.GetLength(0); rows++)
+for (int rows = 0; rows < table.GetLength(0); rows++)
 {
     Console.Write($"строка {rows} - ");
-    for (int columns = 0; columns < tab.GetLength(1); columns++)
+    for (int columns = 0; columns < table.GetLength(1); columns++)
     {
         Console.Write($" '{table[rows, columns]}'");
     }
