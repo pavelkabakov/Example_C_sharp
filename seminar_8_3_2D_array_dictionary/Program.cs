@@ -39,8 +39,9 @@ Dictionary <int, int> FrequencyElementsDictionary(int[,] table)
                 }
                 else
                 {
-                    frequencyElements.Add(table[rows, columns], +1); 
-                    // Console.WriteLine(frequencyElements[table[columns, rows]] );
+                    frequencyElements.Add(table[rows, columns], +1);
+                    // Console.WriteLine("Value added for key = \"ht\": {0}", frequencyElements[frequencyElements[table[rows, columns]]]); 
+                    //Console.WriteLine(frequencyElements[table[columns, rows]] );
                 }
             }
         }
@@ -66,6 +67,8 @@ void FillArray(int[,] tab)
     {
         for (int columns = 0; columns < tab.GetLength(1); columns++)
         {
+         
+            
             tab[rows, columns] = new Random().Next(-10, 10);
         }
         Console.WriteLine();
